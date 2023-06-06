@@ -1,0 +1,12 @@
+Install pkgconfigs in /usr/lib/pkgconfig
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -50,7 +50,7 @@
+ 
+ DIST_SUBDIRS = src doc tests test-data
+ 
+-pkgconfigdir = $(libdir)/pkgconfig
++pkgconfigdir = /usr/lib/pkgconfig
+ pkgconfig_DATA = broadvoice.pc
+ 
+ faq: faq.xml
